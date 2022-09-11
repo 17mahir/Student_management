@@ -7,10 +7,10 @@ export default function Navigation() {
     <div>
         <Navbar bg="dark" variant="dark">
         <Container>
-          <Navbar.Brand href="#home">Student Management System</Navbar.Brand>
+          <Navbar.Brand href="/">Student Management System</Navbar.Brand>
           <Nav className="me-auto">
-            <Nav.Link href="#home">Add Student</Nav.Link>
-            <Nav.Link href="#features">View Student</Nav.Link>
+            <Nav.Link href="/student">Add Student</Nav.Link>
+            <Nav.Link href="/liststudents">View Student</Nav.Link>
           </Nav>
         </Container>
       </Navbar>
