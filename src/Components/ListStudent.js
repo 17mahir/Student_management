@@ -5,7 +5,12 @@ import axios from "axios";
 export default function ListStudent() {
 const [student, setStudent] = useState([]);
 
-
+let getStudents = () => {
+  axios
+    .get("http://localhost:8080/listStudents")
+    .then((response) => setStudent(response.data))
+    .catch((error) => alert(error));
+};
   return (
     <div className="my-3">
       <Container>
